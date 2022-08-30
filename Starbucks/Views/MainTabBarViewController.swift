@@ -14,11 +14,14 @@ class MainTabBarViewController: UITabBarController {
         
         view.backgroundColor = .systemBackground
         
-        let vc1 = UINavigationController(rootViewController: HomeViewController())
+        let vc1 = HomeViewController()
         let vc2 = UINavigationController(rootViewController: ScanViewController())
         let vc3 = UINavigationController(rootViewController: OrderViewController())
         let vc4 = UINavigationController(rootViewController: GiftViewController())
         let vc5 = UINavigationController(rootViewController: StoresViewController())
+        
+        tabBar.tintColor = .lightGreen
+        tabBar.isTranslucent = false
         
         vc1.tabBarItem.image = UIImage(systemName: "house")
         vc1.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
