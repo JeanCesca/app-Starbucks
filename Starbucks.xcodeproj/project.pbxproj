@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F4FC7F328BEB60C00EBBD8B /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7F228BEB60C00EBBD8B /* Factory.swift */; };
+		0F4FC7F528BF999300EBBD8B /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7F428BF999200EBBD8B /* TileView.swift */; };
 		0FD09B0328BE9F750081AFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */; };
 		0FD09B0528BE9F750081AFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */; };
 		0FD09B0728BE9F750081AFF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0628BE9F750081AFF8 /* HomeViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		0F4FC7F228BEB60C00EBBD8B /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		0F4FC7F428BF999200EBBD8B /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		0FD09AFF28BE9F750081AFF8 /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				0FD09B0628BE9F750081AFF8 /* HomeViewController.swift */,
 				0FD09B2228BEA8BD0081AFF8 /* HomeHeaderView.swift */,
+				0F4FC7F428BF999200EBBD8B /* TileView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4FC7F528BF999300EBBD8B /* TileView.swift in Sources */,
 				0FD09B0728BE9F750081AFF8 /* HomeViewController.swift in Sources */,
 				0F4FC7F328BEB60C00EBBD8B /* Factory.swift in Sources */,
 				0FD09B1728BEA0510081AFF8 /* MainTabBarViewController.swift in Sources */,
