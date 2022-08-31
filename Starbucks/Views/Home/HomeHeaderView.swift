@@ -28,7 +28,6 @@ class HomeHeaderView: UIView {
         button.setImage(UIImage(systemName: "envelope"), for: .normal)
         button.imageView?.tintColor = .secondaryLabel
         button.imageView?.contentMode = .scaleAspectFit
-        button.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20)
         return button
     }()
     

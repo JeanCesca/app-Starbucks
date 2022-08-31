@@ -28,15 +28,14 @@ class HomeViewController: UIViewController {
     
     //Array de Titles (ViewControllers) que está inserida dentro da StackView
     private let tiles = [
-        TileView(text: "Star balance"),
-        TileView(text: "Bonus stars"),
-        TileView(text: "Try these"),
-        TileView(text: "Welcome back"),
-        TileView(text: "Uplifting")
+        TileViewController(title: "Breakfast made meatless", subtitle: "Try the Beyond Meat, Cheddar & Egg Breakfast Sandwich, Vegetarian amd protein-packed.", imageName: "meatless"),
+        TileViewController(title: "Uplifting our communities", subtitle: "Thanks to our partners nominations, The Starkbucks Foundation is donation $145K to more than 50 local charities.", imageName: "communities"),
+        TileViewController(title: "Spend at least $15 for 50 Bonus Stars", subtitle: "Collect 50 Bonus Stars when you spend at least $15 pre-tax.", imageName: "bonus")
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureNavBar()
         configureScrollView()
         configureViews()
@@ -58,6 +57,7 @@ class HomeViewController: UIViewController {
         
         scrollView.addSubview(stackView)
         
+        //Adicionando/varrendo cada Tile (UIViewController) para adicionar à ViewController principal
         for tile in tiles {
             addChild(tile)
             stackView.addArrangedSubview(tile.view)
@@ -65,7 +65,6 @@ class HomeViewController: UIViewController {
         }
         
         headerView.translatesAutoresizingMaskIntoConstraints = false
-        headerView.backgroundColor = .systemCyan
         
         headerViewTopConstraint = headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
                 
