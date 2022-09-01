@@ -25,4 +25,12 @@ extension UIColor {
     static let darkGreen = UIColor(red: 0/255, green: 133/255, blue: 67/255, alpha: 1)
     static let lightGreen = UIColor(red: 0/255, green: 171/255, blue: 90/255, alpha: 1)
     static let backgroundWhite = UIColor(red: 247/255, green: 247/255, blue: 247/255, alpha: 1)
+    
+}
+
+public extension NSLayoutConstraint {
+    @objc func setActiveBreakable(priority: UILayoutPriority = UILayoutPriority(900)) {
+        self.priority = priority
+        isActive = true
+    }
 }

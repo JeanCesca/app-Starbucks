@@ -24,7 +24,7 @@ class HomeHeaderView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(.label, for: .normal)
-        button.setTitle("Inbox", for: .normal)
+        button.setTitle(" Inbox", for: .normal)
         button.setImage(UIImage(systemName: "envelope"), for: .normal)
         button.imageView?.tintColor = .secondaryLabel
         button.imageView?.contentMode = .scaleAspectFit

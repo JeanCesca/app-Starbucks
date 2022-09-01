@@ -12,6 +12,13 @@
 		0F4FC7F728BFA3F900EBBD8B /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7F628BFA3F900EBBD8B /* TileViewController.swift */; };
 		0F4FC7F928BFA44500EBBD8B /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7F828BFA44500EBBD8B /* TileView.swift */; };
 		0F4FC7FB28BFD04900EBBD8B /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7FA28BFD04900EBBD8B /* Shadow.swift */; };
+		0F4FC7FE28BFD59400EBBD8B /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7FD28BFD59400EBBD8B /* RewardsTileViewController.swift */; };
+		0F4FC80028BFD5A300EBBD8B /* RewardsTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC7FF28BFD5A300EBBD8B /* RewardsTileView.swift */; };
+		0F4FC80228BFD78500EBBD8B /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80128BFD78500EBBD8B /* BalanceView.swift */; };
+		0F4FC80428C12E3300EBBD8B /* RewardsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80328C12E3300EBBD8B /* RewardsGraphView.swift */; };
+		0F4FC80828C1331400EBBD8B /* StarAndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80728C1331400EBBD8B /* StarAndPoints.swift */; };
+		0F4FC80A28C134F700EBBD8B /* StarRewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80928C134F700EBBD8B /* StarRewardsRow.swift */; };
+		0F4FC80C28C137A800EBBD8B /* StarRewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80B28C137A800EBBD8B /* StarRewardsView.swift */; };
 		0FD09B0328BE9F750081AFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */; };
 		0FD09B0528BE9F750081AFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */; };
 		0FD09B0728BE9F750081AFF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0628BE9F750081AFF8 /* HomeViewController.swift */; };
@@ -31,6 +38,13 @@
 		0F4FC7F628BFA3F900EBBD8B /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		0F4FC7F828BFA44500EBBD8B /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		0F4FC7FA28BFD04900EBBD8B /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		0F4FC7FD28BFD59400EBBD8B /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
+		0F4FC7FF28BFD5A300EBBD8B /* RewardsTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileView.swift; sourceTree = "<group>"; };
+		0F4FC80128BFD78500EBBD8B /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		0F4FC80328C12E3300EBBD8B /* RewardsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGraphView.swift; sourceTree = "<group>"; };
+		0F4FC80728C1331400EBBD8B /* StarAndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPoints.swift; sourceTree = "<group>"; };
+		0F4FC80928C134F700EBBD8B /* StarRewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsRow.swift; sourceTree = "<group>"; };
+		0F4FC80B28C137A800EBBD8B /* StarRewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsView.swift; sourceTree = "<group>"; };
 		0FD09AFF28BE9F750081AFF8 /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +71,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4FC7FC28BFD56900EBBD8B /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FC7FD28BFD59400EBBD8B /* RewardsTileViewController.swift */,
+				0F4FC7FF28BFD5A300EBBD8B /* RewardsTileView.swift */,
+				0F4FC80128BFD78500EBBD8B /* BalanceView.swift */,
+				0F4FC80328C12E3300EBBD8B /* RewardsGraphView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		0F4FC80528C132CB00EBBD8B /* StarsReward */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FC80728C1331400EBBD8B /* StarAndPoints.swift */,
+				0F4FC80928C134F700EBBD8B /* StarRewardsRow.swift */,
+				0F4FC80B28C137A800EBBD8B /* StarRewardsView.swift */,
+			);
+			path = StarsReward;
+			sourceTree = "<group>";
+		};
 		0FD09AF628BE9F750081AFF8 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +143,8 @@
 				0F4FC7F428BF999200EBBD8B /* PlaceholderViewController.swift */,
 				0F4FC7F628BFA3F900EBBD8B /* TileViewController.swift */,
 				0F4FC7F828BFA44500EBBD8B /* TileView.swift */,
+				0F4FC7FC28BFD56900EBBD8B /* Rewards */,
+				0F4FC80528C132CB00EBBD8B /* StarsReward */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -192,17 +229,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4FC7F528BF999300EBBD8B /* PlaceholderViewController.swift in Sources */,
+				0F4FC80028BFD5A300EBBD8B /* RewardsTileView.swift in Sources */,
+				0F4FC80428C12E3300EBBD8B /* RewardsGraphView.swift in Sources */,
 				0FD09B0728BE9F750081AFF8 /* HomeViewController.swift in Sources */,
 				0F4FC7F928BFA44500EBBD8B /* TileView.swift in Sources */,
 				0F4FC7F328BEB60C00EBBD8B /* Factory.swift in Sources */,
 				0FD09B1728BEA0510081AFF8 /* MainTabBarViewController.swift in Sources */,
+				0F4FC80828C1331400EBBD8B /* StarAndPoints.swift in Sources */,
 				0FD09B1A28BEA1250081AFF8 /* ScanViewController.swift in Sources */,
+				0F4FC80A28C134F700EBBD8B /* StarRewardsRow.swift in Sources */,
+				0F4FC80228BFD78500EBBD8B /* BalanceView.swift in Sources */,
 				0FD09B2328BEA8BD0081AFF8 /* HomeHeaderView.swift in Sources */,
 				0FD09B0328BE9F750081AFF8 /* AppDelegate.swift in Sources */,
 				0FD09B2028BEA1590081AFF8 /* StoresViewController.swift in Sources */,
 				0F4FC7FB28BFD04900EBBD8B /* Shadow.swift in Sources */,
+				0F4FC7FE28BFD59400EBBD8B /* RewardsTileViewController.swift in Sources */,
 				0F4FC7F728BFA3F900EBBD8B /* TileViewController.swift in Sources */,
 				0FD09B0528BE9F750081AFF8 /* SceneDelegate.swift in Sources */,
+				0F4FC80C28C137A800EBBD8B /* StarRewardsView.swift in Sources */,
 				0FD09B1E28BEA14A0081AFF8 /* GiftViewController.swift in Sources */,
 				0FD09B1C28BEA13C0081AFF8 /* OrderViewController.swift in Sources */,
 			);

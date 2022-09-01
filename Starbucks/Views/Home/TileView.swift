@@ -44,7 +44,7 @@ class TileView: UIView {
         button.titleLabel?.adjustsFontSizeToFitWidth = true
         button.layer.cornerRadius = 40/2
         button.backgroundColor = .darkGreen
-        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
+        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
 //        button.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
         return button
     }()
