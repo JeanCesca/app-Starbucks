@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class StarRewardsRow: UIView {
-    
+
     let starAndPoints = StarAndPoints()
-    
+
     private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -21,28 +21,28 @@ class StarRewardsRow: UIView {
         label.sizeToFit()
         return label
     }()
-    
+
     init(numberOfPoints: String, description: String) {
         starAndPoints.pointsLabel.text = numberOfPoints
         descriptionLabel.text = description
-        
+
         super.init(frame: .zero)
-            
+
         addSubview(starAndPoints)
         addSubview(descriptionLabel)
-        
+
         configureConstraints()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func configureConstraints() {
-        
+
         starAndPoints.translatesAutoresizingMaskIntoConstraints = false
         starAndPoints.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        
+
         NSLayoutConstraint.activate([
             starAndPoints.topAnchor.constraint(equalTo: topAnchor),
             starAndPoints.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -54,4 +54,9 @@ class StarRewardsRow: UIView {
             descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
+
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 10, height: 5)
+    }
+    
 }

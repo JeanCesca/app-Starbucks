@@ -19,6 +19,11 @@
 		0F4FC80828C1331400EBBD8B /* StarAndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80728C1331400EBBD8B /* StarAndPoints.swift */; };
 		0F4FC80A28C134F700EBBD8B /* StarRewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80928C134F700EBBD8B /* StarRewardsRow.swift */; };
 		0F4FC80C28C137A800EBBD8B /* StarRewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80B28C137A800EBBD8B /* StarRewardsView.swift */; };
+		0F4FC80F28C24CA700EBBD8B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC80E28C24CA700EBBD8B /* HistoryViewController.swift */; };
+		0F4FC81428C2517300EBBD8B /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC81328C2517300EBBD8B /* HistoryViewCell.swift */; };
+		0F4FC81628C2553900EBBD8B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC81528C2553900EBBD8B /* HistoryViewModel.swift */; };
+		0F4FC81828C2554A00EBBD8B /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC81728C2554A00EBBD8B /* HistoryService.swift */; };
+		0F4FC81A28C2556000EBBD8B /* HistoryTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FC81928C2556000EBBD8B /* HistoryTransaction.swift */; };
 		0FD09B0328BE9F750081AFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */; };
 		0FD09B0528BE9F750081AFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */; };
 		0FD09B0728BE9F750081AFF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD09B0628BE9F750081AFF8 /* HomeViewController.swift */; };
@@ -45,6 +50,11 @@
 		0F4FC80728C1331400EBBD8B /* StarAndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPoints.swift; sourceTree = "<group>"; };
 		0F4FC80928C134F700EBBD8B /* StarRewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsRow.swift; sourceTree = "<group>"; };
 		0F4FC80B28C137A800EBBD8B /* StarRewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsView.swift; sourceTree = "<group>"; };
+		0F4FC80E28C24CA700EBBD8B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0F4FC81328C2517300EBBD8B /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		0F4FC81528C2553900EBBD8B /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		0F4FC81728C2554A00EBBD8B /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		0F4FC81928C2556000EBBD8B /* HistoryTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransaction.swift; sourceTree = "<group>"; };
 		0FD09AFF28BE9F750081AFF8 /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +102,18 @@
 			path = StarsReward;
 			sourceTree = "<group>";
 		};
+		0F4FC80D28C24C8400EBBD8B /* HistoryTile */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FC80E28C24CA700EBBD8B /* HistoryViewController.swift */,
+				0F4FC81528C2553900EBBD8B /* HistoryViewModel.swift */,
+				0F4FC81328C2517300EBBD8B /* HistoryViewCell.swift */,
+				0F4FC81728C2554A00EBBD8B /* HistoryService.swift */,
+				0F4FC81928C2556000EBBD8B /* HistoryTransaction.swift */,
+			);
+			path = HistoryTile;
+			sourceTree = "<group>";
+		};
 		0FD09AF628BE9F750081AFF8 = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +135,8 @@
 			children = (
 				0FD09B0228BE9F750081AFF8 /* AppDelegate.swift */,
 				0FD09B0428BE9F750081AFF8 /* SceneDelegate.swift */,
-				0FD09B1828BEA05B0081AFF8 /* Views */,
 				0FD09B2528BEB5B10081AFF8 /* Utilities */,
+				0FD09B1828BEA05B0081AFF8 /* Views */,
 				0FD09B0B28BE9F770081AFF8 /* Assets.xcassets */,
 				0FD09B0D28BE9F770081AFF8 /* LaunchScreen.storyboard */,
 				0FD09B1028BE9F770081AFF8 /* Info.plist */,
@@ -126,11 +148,11 @@
 			isa = PBXGroup;
 			children = (
 				0FD09B1628BEA0510081AFF8 /* MainTabBarViewController.swift */,
-				0FD09B2428BEAA0A0081AFF8 /* Home */,
 				0FD09B1928BEA1250081AFF8 /* ScanViewController.swift */,
 				0FD09B1B28BEA13C0081AFF8 /* OrderViewController.swift */,
 				0FD09B1D28BEA14A0081AFF8 /* GiftViewController.swift */,
 				0FD09B1F28BEA1590081AFF8 /* StoresViewController.swift */,
+				0FD09B2428BEAA0A0081AFF8 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +165,7 @@
 				0F4FC7F428BF999200EBBD8B /* PlaceholderViewController.swift */,
 				0F4FC7F628BFA3F900EBBD8B /* TileViewController.swift */,
 				0F4FC7F828BFA44500EBBD8B /* TileView.swift */,
+				0F4FC80D28C24C8400EBBD8B /* HistoryTile */,
 				0F4FC7FC28BFD56900EBBD8B /* Rewards */,
 				0F4FC80528C132CB00EBBD8B /* StarsReward */,
 			);
@@ -232,12 +255,17 @@
 				0F4FC80028BFD5A300EBBD8B /* RewardsTileView.swift in Sources */,
 				0F4FC80428C12E3300EBBD8B /* RewardsGraphView.swift in Sources */,
 				0FD09B0728BE9F750081AFF8 /* HomeViewController.swift in Sources */,
+				0F4FC81A28C2556000EBBD8B /* HistoryTransaction.swift in Sources */,
 				0F4FC7F928BFA44500EBBD8B /* TileView.swift in Sources */,
+				0F4FC81428C2517300EBBD8B /* HistoryViewCell.swift in Sources */,
+				0F4FC80F28C24CA700EBBD8B /* HistoryViewController.swift in Sources */,
 				0F4FC7F328BEB60C00EBBD8B /* Factory.swift in Sources */,
 				0FD09B1728BEA0510081AFF8 /* MainTabBarViewController.swift in Sources */,
+				0F4FC81628C2553900EBBD8B /* HistoryViewModel.swift in Sources */,
 				0F4FC80828C1331400EBBD8B /* StarAndPoints.swift in Sources */,
 				0FD09B1A28BEA1250081AFF8 /* ScanViewController.swift in Sources */,
 				0F4FC80A28C134F700EBBD8B /* StarRewardsRow.swift in Sources */,
+				0F4FC81828C2554A00EBBD8B /* HistoryService.swift in Sources */,
 				0F4FC80228BFD78500EBBD8B /* BalanceView.swift in Sources */,
 				0FD09B2328BEA8BD0081AFF8 /* HomeHeaderView.swift in Sources */,
 				0FD09B0328BE9F750081AFF8 /* AppDelegate.swift in Sources */,

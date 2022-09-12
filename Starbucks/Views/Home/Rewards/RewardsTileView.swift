@@ -22,6 +22,7 @@ class RewardsTileView: UIView {
         
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(rewardOptionTapped), for: .primaryActionTriggered)
         button.setImage(image, for: .normal)
         button.setTitle("Rewards options   ", for: .normal)
         button.setTitleColor(.label, for: .normal)
@@ -90,7 +91,6 @@ class RewardsTileView: UIView {
             starRewardsView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
             starRewardsView.topAnchor.constraint(equalTo: rewardsGraphView.bottomAnchor, constant: 8),
             trailingAnchor.constraint(equalToSystemSpacingAfter: starRewardsView.trailingAnchor, multiplier: 1),
-            heightConstraint!,
             
             detailsButton.topAnchor.constraint(equalToSystemSpacingBelow: starRewardsView.bottomAnchor, multiplier: 2),
             detailsButton.leadingAnchor.constraint(equalTo: balanceView.leadingAnchor),
@@ -104,5 +104,9 @@ class RewardsTileView: UIView {
         
         rewardsGraphView.actualFrameWidth = frame.width
         rewardsGraphView.drawRewardsGraph()
+    }
+    
+    @objc func rewardOptionTapped(_ sender: UIButton) {
+        
     }
 }

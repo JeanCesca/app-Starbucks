@@ -40,7 +40,7 @@ class BalanceView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        
+            
         addSubview(pointsLabel)
         addSubview(starView)
         addSubview(starBalanceLabel)
@@ -57,13 +57,14 @@ class BalanceView: UIView {
             pointsLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             pointsLabel.topAnchor.constraint(equalTo: topAnchor),
             
-            starView.leadingAnchor.constraint(equalTo: pointsLabel.trailingAnchor, constant: 4),
-            starView.centerYAnchor.constraint(equalTo: pointsLabel.centerYAnchor),
-            starView.heightAnchor.constraint(equalToConstant: 22),
-            starView.widthAnchor.constraint(equalToConstant: 22),
+            starView.leadingAnchor.constraint(equalTo: pointsLabel.trailingAnchor, constant: -2),
+            starView.centerYAnchor.constraint(equalTo: pointsLabel.centerYAnchor, constant: 4),
+            starView.heightAnchor.constraint(equalToConstant: 15),
             
-            starBalanceLabel.leadingAnchor.constraint(equalTo: pointsLabel.leadingAnchor),
+            starBalanceLabel.leadingAnchor.constraint(equalTo: pointsLabel.leadingAnchor, constant: 0),
             starBalanceLabel.topAnchor.constraint(equalTo: pointsLabel.bottomAnchor),
+            starBalanceLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            starBalanceLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
         
         ])
         

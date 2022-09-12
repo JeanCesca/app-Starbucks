@@ -117,6 +117,7 @@ class RewardsGraphView: UIView {
             
             star?.draw(at: CGPoint(x: indicatorX, y: indicatorY))
             
+            // Draw our labels
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.alignment = .center
             

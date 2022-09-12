@@ -53,6 +53,9 @@ class HomeViewController: UIViewController {
     }
     
     private func configureViews() {
+        
+        headerView.delegate = self
+        
         view.addSubview(headerView)
         view.addSubview(scrollView)
         
@@ -108,7 +111,14 @@ extension HomeViewController: UIScrollViewDelegate {
             self.view.layoutIfNeeded()
         })
     }
-    
+}
+
+extension HomeViewController: HomeHeaderViewDelegate {
+
+    func didTapHistoryButton(_ sender: HomeHeaderView) {
+        let navController = UINavigationController(rootViewController: HistoryViewController())
+        present(navController, animated: true, completion: nil)
+    }
 }
     
 
